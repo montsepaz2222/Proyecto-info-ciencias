@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="./assets/FOTO.webp" type="image/icon type">
+    <meta charset="UTF-8">
+   <style>
+        body{
+            background-color: #f4f6f8;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #2c2c2c;
+            margin: 25px;
+        }
+
+        table {
+            width: auto;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.10);
+            margin-bottom: 20px;
+        }
+
+        td {
+            border: 1px solid #9aa4ad;
+            padding: 10px;
+        }
+
+        h2,h3 {
+            text-align: center;
+            color: #23415c;
+        }
+
+        h2{
+            background-color: #dce8f2;
+            padding: 12px;
+            border-radius: 10px;
+            width: fit-content;
+            margin: auto;
+            margin-bottom: 20px;
+            margin-top: 15px;
+        }
+
+        h3{
+            margin-top: 30px;
+            background-color: #eaf1f7;
+            padding: 8px;
+            border-left: 5px solid #4f6d8a;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 5px;
+        }
+
+        .logo{
+            text-align: center;
+        }
+
+        .logo img{
+            border-radius: 15px;
+            box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
+        }
+
+        input{
+            border: 1px solid #aab7c4;
+            border-radius: 6px;
+            padding: 6px;
+            background-color: #fdfdfd;
+        }
+
+        input:focus{
+            outline: none;
+            border-color: #4f6d8a;
+            box-shadow: 0px 0px 5px rgba(79,109,138,0.4);
+        }
+
+        p{
+            font-weight: 500;
+        }
+
+        div[style*="text-align: center"]{
+            margin-top: 50px;
+            color: #23415c;
+            font-weight: bold;
+        }
+</style>
+</head>
+
+<body>
+ <br>
+ <div class="logo">
+<img src="./assets/logo.jpeg" width="140" class="rounded" alt="Cinque Terre">   
+ </div> 
+<p style="text-align: center;"> Dirección de la unidad hospitalaria </p>
+<h2>Historia Clínica acorde con la NOM vigente 168-SSA1-1998</h2>
+
+<table>
+  <tr>
+    <td>    
+        <p>Médico tratante:</p>
+        <input type="text" id="medico" placeholder="Dra. Annya Ortejo">
+    </td>
+    <td>
+        <p>Fecha de Historia Clínica:</p>
+        <input type="text" id="historia" placeholder="12 mayo 2026">
+    </td>
+  </tr>
+
+  <tr>
+    <td> 
+        <p>Nombre paciente:</p>
+        <input type="text" id="nombre" placeholder="Isabella Medrano Luna">
+    </td>
+
+    <td> 
+        <p>Edad:</p> 
+        <input type="text" id="edad" placeholder="37 años">
+        <p>Sexo:</p>
+        <input type="text" id="sexo" placeholder="Femenino"> 
+    </td>
+   </tr>
+
+  <tr>
+    <td>
+        <p>Domicilio:</p>
+        <input type="text" style="width: 350px;" id="domicilio" placeholder="Av. Los Ángeles 2768 Col. San Francisco C.P. 24669">
+    </td>
+
+    <td>
+        <p>Teléfono:</p>
+        <input type="text" id="telefono" placeholder="663 741 9018">
+    </td>
+  </tr>
+
+    <tr>
+    <td>
+      <p>Datos completos de familiar responsable:</p>
+        <input type="text" style="width: 300px;" id="datos" placeholder="Emilio Valdez Martínez - Parentesco:Esposo">
+    </td>
+
+    <td>
+        <p>Religión:</p>
+        <input type="text" id="religion" placeholder="Católica Cristiana">
+    </td>
+  </tr>
+
+    <tr>
+    <td>
+      <p>Fecha de Nacimiento:</p>
+        <input type="text" id="nacimiento" placeholder="27 octubre 1989">
+    </td>
+
+    <td>
+         <p>Peso:</p>
+        <input type="text" id="peso" placeholder="39.8 kg">
+    </td>
+  </tr>
+</table>
+
+<h3>Antecedentes Hereditarios y Familiares:</h3>
+<table>
+    <tr>
+    <td>
+         <input type="text" style="width: 350px;" id="enfermedad" placeholder="Diabetes tipo 2, hipertensión, cáncer leusemia y lupus">
+    </td>
+
+    <td>
+        <p>Familiar que lo padece:</p>
+         <input type="text" style="width: 400px;" id="familiar" placeholder="Papá y abuelo paterno, abuela materna, tía materna y tío paterno">
+    </td>
+  </tr>
+</table>
+
+<table>
+    <h3>Antecedentes Personales No Patológicos:</h3>
+    <tr>
+    <td>
+        <p>Lugar de Nacimiento:</p>
+        <input type="text" id="lugar" placeholder="Tijuana, Baja California">
+    </td>
+
+    <td>
+        <p>Lugar de Residencia:</p>
+         <input type="text" id="residencia" placeholder="Tijuana, Baja California">
+        <p>Fecha:</p>
+         <input type="text" id="fecha" placeholder="Hace 30 años">
+    </td>
+  </tr>
+
+      <tr>
+    <td>
+        <p>Hábito tabáquico:</p>
+        <input type="text" style="width: 100px;" id="tabaco" placeholder="Nunca">
+    </td>
+
+    <td>
+         <p>Ocupación actual:</p>
+        <input type="text" style="width: 300px;" id="ocupacion" placeholder="Trabajo de oficina de lunes a viernes">
+    </td>
+  </tr>
+
+    <tr>
+    <td>
+        <p>Hábito alcohólico:</p>
+        <input type="text" style="width: 100px;" id="alcohol" placeholder="Niega">
+    </td>
+
+    <td>
+         <p>Tipo de Sangre:</p>
+        <input type="text" id="sangre" placeholder="O negativo">
+    </td>
+  </tr>
+
+    <tr>
+    <td>
+        <p>Ejercicio:</p>
+        <input type="text" style="width: 250px;" id="ejercicio" placeholder="3 veces por semana, 2 horas al día">
+    </td>
+
+    <td>
+         <p>Hábitos de higiene:</p>
+        <input type="text" style="width: 900px;" id="higiene" placeholder="Baño diario, lavado de manos antes de comer y lavado de dientes después, lavado de ropa después de dos usos y limpieza diaria del ambiente">
+    </td>
+  </tr>
+
+    <tr>
+    <td>
+        <p>Adicciones:</p>
+        <input type="text" style="width: 100px;" id="adicciones" placeholder="Niega">
+    </td>
+
+    <td>
+         <p>Alergias:</p>
+        <input type="text" id="alergias" placeholder="Penicilina y lácteos">
+    </td>
+  </tr>
+</table>
+
+<table>
+    <tr>
+        <h3>Antecedentes Personales Patológicos:</h3>
+    <td>
+        <input type="text" style="width: 640px;" id="antecedentes" placeholder="1.Dos abortos espontáneos.  2.Intolerancia a la lactosa.  3.Neuropatía periférica.  4.COVID-19 asintomático">
+    </td>
+
+    <td>
+        <p>Fecha de inicio:</p>
+         <input type="text" style="width: 600px;" id="fecha" placeholder="1.Edad 29 y 31 años.  2.Detectada a sus 17 años.  3.Presente hace 2 meses.  4.33 años de edad">
+    </td>
+  </tr>
+</table>
+
+<table>
+    <h3>Antecedentes Ginecoobstetricos:</h3>
+    <tr>
+    <td>
+        <p>Menarca:</p>
+        <input type="text" id="menarca" placeholder="12 años">
+    </td>
+
+    <td>
+        <p>FUR:</p>
+         <input type="text" id="fur" placeholder="7 mayo 2026">
+    </td>
+
+    <td>
+     <p>Método anticonceptivo:</p>
+         <input type="text" id="metodo" placeholder="Ninguno">
+    </td>
+  </tr>
+
+      <tr>
+    <td>
+        <p>G:</p>
+        <input type="text" style="width: 100px;"  id="g" placeholder="2">
+         <p>P:</p>
+        <input type="text" style="width: 100px;"  id="p" placeholder="0">
+         <p>C:</p>
+        <input type="text" style="width: 100px;"  id="c" placeholder="0">
+         <p>A:</p>
+        <input type="text" style="width: 100px;"  id="a" placeholder="2">
+    </td>
+
+    <td>
+        <p>Fecha Papanicolau:</p>
+         <input type="text" id="papanicolao" placeholder="Hace 1 año">
+    </td>
+
+    <td>
+     <p>Fecha Mastografía:</p>
+         <input type="text" id="mastografia" placeholder="Junio 2019">
+    </td>
+  </tr> 
+</table>
+
+
+    <h3>Medicación actual:</h3>
+    <table>
+<tr>
+    <td>
+        <p>Medicamento:</p>
+        <input type="text" id="medicamento" placeholder="Gabapentina (neurotin)">
+    </td>
+
+    <td>
+         <p>Dosis:</p>
+        <input type="text" style="width: 400px;" id="dosis" placeholder="1 cápsula después de cada alimento (desayuno, comida, cena)">
+    </td>
+
+     <td>
+         <p>Fecha de inicio:</p>
+        <input type="text" style="width: 200px;" id="inicio" placeholder="Hace 2 meses (16 abril 2026)">
+    </td>
+  </tr>
+</table>
+
+<h3>Padecimiento actual</h3>
+<table>
+ <tr>
+    <td>
+        <input type="text" style="width: 500px;" id="padecimiento" placeholder="Refiere inicio de padecimieno de enfermedad Celíaca desde el día 3 de marzo 2026"> 
+    </td>
+ </tr>
+</table>
+
+<h3>Interrogatorio por Aparatos y Sistemas</h3>
+<table>
+ <tr>
+    <td><p> Digestivo: </p></td>
+    <td> <input type="text" style="width: 300px;" id="digestivo" placeholder="Dolor abdominal, diarrea excesiva y gases"> </td>
+ </tr>
+ <tr>
+    <td><p> Respiratorio: </p></td>
+    <td> <input type="text" style="width: 300px;" id="respiratorio" placeholder="Interrogados y negados"> </td>
+ </tr>
+ <tr>
+    <td><p> Circulatorio: </p></td>
+    <td> <input type="text" style="width: 300px;" id="circulatorio" placeholder="Interrogados y negados"> </td>
+ </tr>
+ <tr>
+    <td><p> Musculoesquelético: </p></td>
+    <td> <input type="text" style="width: 300px;" id="musculos" placeholder="Dolor en articulaciones y pérdida de peso"> </td>
+ </tr>
+ <tr>
+    <td><p> Nervioso: </p></td>
+    <td> <input type="text" style="width: 300px;" id="nervioso" placeholder="Neuropatía periférica"> </td>
+ </tr>
+ <tr>
+    <td><p> Urinario: </p></td>
+    <td> <input type="text" style="width: 300px;" id="urinario" placeholder="Interrogados y negados"> </td>
+ </tr>
+ <tr>
+    <td><p> Reproductor: </p></td>
+    <td> <input type="text" style="width: 300px;" id="reproductor" placeholder="Infertilidad"> </td>
+ </tr>
+ <tr>
+    <td><p> Sentidos: </p></td>
+    <td> <input type="text" style="width: 300px;" id="sentidos" placeholder="Interrogados y negados"> </td>
+ </tr>
+</table>
+
+<h3>Exploración Física</h3>
+  <table>
+<tr>
+    <td>
+        <p>TA:</p>
+        <input type="text" style="width: 100px;" id="TA" placeholder="115/20">
+    </td>
+
+    <td>
+         <p>Pulso:</p>
+        <input type="text" style="width: 100px;" id="pulso" placeholder="58 lpm">
+    </td>
+
+     <td>
+         <p>FR:</p>
+        <input type="text"style="width: 100px;"  id="fr" placeholder="16 rpm">
+    </td>
+
+     <td>
+         <p>Sat:</p>
+        <input type="text" style="width: 100px;" id="sat" placeholder="99%">
+    </td>
+
+     <td>
+         <p>Temp:</p>
+        <input type="text" style="width: 100px;" id="temp" placeholder="36.7°C">
+    </td>
+  </tr>
+</table>
+<table>
+  <tr>
+     <td>
+<input type="text" style="width: 1000px;" id="respuesta" placeholder="1.Inspección: indirecta, estática y dinámica.  2.Auscultación: directa e indirecta.  3.Palpación: directa, profunda e instrumental.  4.Percusión: mediata e inmediata.">
+ </td>
+</tr>
+</table>
+
+<h3>Exámenes de laboratorio y gabinete:</h3>
+<table>
+    <tr>
+        <td>
+<input type="text" style="width: 300px;" id="impresion" placeholder="Análisis de sangre y biopsia intestinal (laboratorio)">
+        </td>
+</tr>
+</table>
+<p>Impresión diagnóstica:</p> <input type="text" style="width: 500px;" id="impresion" placeholder="Posible presencia de Celíaca, descartar presencia de parásitos o SIBO">
+<p>Plan Diagnóstico:</p> <input type="text" style="width: 300px;" id="diagnostico" placeholder="Clínico, exámenes de laboratorio">
+<p>Plan Terapéutico:</p> <input type="text" style="width: 300px;" id="terapeutico" placeholder="Dieta estricta sin presencia de gluten">
+
+<div style="text-align: center;">
+    <p style="margin-bottom: 2px;">Dra. Annya Ortejo</p>
+    ______________________________________________________
+    <br>
+    Nombre y Firma de quien realiza la historia clínica
+</div>
+<br>
+<h4>Integrantes del equipo:</h4>
+<p>Montserrat Paz, Mila Toscano y Ana Sánchez - 602</p>
+
+</body>
+</html> 
